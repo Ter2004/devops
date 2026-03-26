@@ -1,4 +1,15 @@
 # app.py - Simple Tax Calculator
+
+
+def validate_income(income):
+    """Validate that income is a non-negative number."""
+    if not isinstance(income, (int, float)):
+        raise TypeError("Income must be a number")
+    if income < 0:
+        raise ValueError("Income cannot be negative")
+    return True
+
+
 def calculate_tax(income):
     if income <= 150000:
         return 0
