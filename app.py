@@ -22,6 +22,7 @@ def calculate_tax(income):
     else:
         return 65000 + (income - 750000) * 0.20
 
+
 def calculate_deduction(expense_type, amount):
     """Calculate allowable tax deductions."""
     deductions = {
@@ -41,4 +42,3 @@ if __name__ == "__main__":
         tax = calculate_tax(income)
         print(f"Income: {income:>10,} THB | Tax: {tax:>10,.2f} THB")
     print("=" * 45)
-
