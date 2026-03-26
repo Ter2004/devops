@@ -12,8 +12,12 @@ def calculate_tax(income):
         return 65000 + (income - 750000) * 0.20
 
 if __name__ == "__main__":
+    print("=" * 45)
+    print("       Thai Income Tax Calculator")
+    print("=" * 45)
     test_incomes = [100000, 250000, 400000, 600000, 1000000]
     for income in test_incomes:
         tax = calculate_tax(income)
         print(f"Income: {income:>10,} THB | Tax: {tax:>10,.2f} THB")
+    print("=" * 45)
 
